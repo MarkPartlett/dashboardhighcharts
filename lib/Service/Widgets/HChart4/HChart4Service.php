@@ -25,11 +25,11 @@
  */
 
 
-namespace OCA\DashboardCharts\Service\Widgets\HChart4;
+namespace OCA\DashboardHighCharts\Service\Widgets\HChart4;
 
-use OCA\DashboardCharts\Service\ConfigService;
-use OCA\DashboardCharts\Service\MiscService;
-use OCA\DashboardCharts\Db\DataRequest;
+use OCA\DashboardHighCharts\Service\ConfigService;
+use OCA\DashboardHighCharts\Service\MiscService;
+use OCA\DashboardHighCharts\Db\DataRequest;
 
 class HChart4Service {
 	

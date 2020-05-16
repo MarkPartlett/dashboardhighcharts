@@ -26,29 +26,29 @@
 
 /** @var array $_ */
 /** @var \OCP\IL10N $l */
-style('dashboardcharts', 'personal');
-script('dashboardcharts', 'widgets/highstock');
-script('dashboardcharts', 'widgets/modules/exporting');
-script('dashboardcharts', 'widgets/export-data');
-script('dashboardcharts', 'widgets/highcharts-more');
-script('dashboardcharts', 'widgets/highcharts-3d');
-script('dashboardcharts', 'widgets/data');
-script('dashboardcharts', 'widgets/funnel');
-script('dashboardcharts', 'widgets/solid-gauge');
-script('dashboardcharts', 'widgets/accessibility');
-script('dashboardcharts', 'widgets/annotations');
-style('dashboardcharts', 'widgets/highcharts-editor.min');
-script('dashboardcharts', 'widgets/highcharts-editor');
-script('dashboardcharts', 'widgets/highcharts-editor.complete');
-script('dashboardcharts', 'widgets/data-csv');
-script('dashboardcharts', 'widgets/data-difi');
-script('dashboardcharts', 'widgets/data-gspreadsheets');
-script('dashboardcharts', 'widgets/data-socrata');
-script('dashboardcharts', 'widgets/export-beautified');
-script('dashboardcharts', 'widgets/jquery-2.2.4.min');
-script('dashboardcharts', 'widgets/codemirror.min');
-style('dashboardcharts', 'widgets/codemirror.min');
-script('dashboardcharts', 'personal');
+style('dashboardhighcharts', 'personal');
+script('dashboardhighcharts', 'widgets/highstock');
+script('dashboardhighcharts', 'widgets/modules/exporting');
+script('dashboardhighcharts', 'widgets/export-data');
+script('dashboardhighcharts', 'widgets/highcharts-more');
+script('dashboardhighcharts', 'widgets/highcharts-3d');
+script('dashboardhighcharts', 'widgets/data');
+script('dashboardhighcharts', 'widgets/funnel');
+script('dashboardhighcharts', 'widgets/solid-gauge');
+script('dashboardhighcharts', 'widgets/accessibility');
+script('dashboardhighcharts', 'widgets/annotations');
+style('dashboardhighcharts', 'widgets/highcharts-editor.min');
+script('dashboardhighcharts', 'widgets/highcharts-editor');
+script('dashboardhighcharts', 'widgets/highcharts-editor.complete');
+script('dashboardhighcharts', 'widgets/data-csv');
+script('dashboardhighcharts', 'widgets/data-difi');
+script('dashboardhighcharts', 'widgets/data-gspreadsheets');
+script('dashboardhighcharts', 'widgets/data-socrata');
+script('dashboardhighcharts', 'widgets/export-beautified');
+script('dashboardhighcharts', 'widgets/jquery-2.2.4.min');
+script('dashboardhighcharts', 'widgets/codemirror.min');
+style('dashboardhighcharts', 'widgets/codemirror.min');
+script('dashboardhighcharts', 'personal');
 
 function prettyPrint( $json )
 {
@@ -188,7 +188,7 @@ function prettyPrint( $json )
 	<body>
 
 <div id="dashboard-section" class="section" data-cachebuster="<?php print_unescaped($_['cachebuster']); ?>">
-	<h2 class="inlineblock"><?php p($l->t('Dashboard Charts')); ?></h2>
+	<h2 class="inlineblock"><?php p($l->t('Dashboard HighCharts Widgets')); ?></h2>
 	<p>
 		<?php p($l->t('Widget Settings')); ?>
 		<button id="dashboard-save" class="btn btn-primary" ><?php p($l->t('Save')); ?></button>
@@ -205,13 +205,13 @@ function prettyPrint( $json )
 				
 				<td class="small">
 				
-					<h1 class="inlineblock"><?php p(($data)['widget']) ?><h1>
+					<h1 class="inlineblock"><?php p(($data)['widget']) ?> MetaData:<h1>
 					
 						 
 												 						 						 
 					<label for="<?php p($activity) ?>_<?php p($activity) ?>">
 					<textarea style="height:400px;width:100%" id="<?php p(($data)['widget']) ?>" value="<?php p(($data)['data']); ?>"><?php p(prettyPrint(($data)['data'])); ?> </textarea>
-					</label>
+					
 				</td>
 				<button id="Edit-<?php p(($data)['widget']) ?>-button" hidden class="highed-imp-button" ><?php p($l->t('Create A Chart')); ?></button>
 			</tr>

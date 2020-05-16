@@ -27,19 +27,19 @@
  */
 
 
-namespace OCA\DashboardCharts\Db;
+namespace OCA\DashboardHighCharts\Db;
 
 
 use Doctrine\DBAL\Query\QueryBuilder;
-use OCA\DashboardCharts\Service\ConfigService;
-use OCA\DashboardCharts\Service\MiscService;
+use OCA\DashboardHighCharts\Service\ConfigService;
+use OCA\DashboardHighCharts\Service\MiscService;
 use OCP\DB\QueryBuilder\IQueryBuilder;
 use OCP\IDBConnection;
 
 class CoreDataRequestBuilder {
 
-	const TABLE_SETTINGS = 'dashboard_data';
-	const TABLE_EVENTS = 'chart1_settings';
+	const TABLE_SETTINGS = 'hcdashboard_data';
+	const TABLE_EVENTS = 'hchart1_settings';
 
 	/** @var IDBConnection */
 	protected $dbConnection;

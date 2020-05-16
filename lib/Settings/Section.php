@@ -24,7 +24,7 @@
  *
  */
 
-namespace OCA\DashboardCharts\Settings;
+namespace OCA\DashboardHighCharts\Settings;
 
 use OCP\IL10N;
 use OCP\IURLGenerator;
@@ -53,7 +53,7 @@ class Section implements IIconSection {
 	 * @returns string
 	 */
 	public function getID() {
-		return 'dashboardcharts';
+		return 'dashboardhighcharts';
 	}
 
 	/**
@@ -63,7 +63,7 @@ class Section implements IIconSection {
 	 * @return string
 	 */
 	public function getName() {
-		return $this->l->t('Dashboard Charts');
+		return $this->l->t('Dashboard HighCharts');
 	}
 
 	/**

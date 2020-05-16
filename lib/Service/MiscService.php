@@ -26,7 +26,7 @@
  *
  */
 
-namespace OCA\DashboardCharts\Service;
+namespace OCA\DashboardHighCharts\Service;
 
 use OCA\Dashboard\AppInfo\Application;
 use OCP\ILogger;

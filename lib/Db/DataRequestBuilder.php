@@ -27,10 +27,10 @@
  */
 
 
-namespace OCA\DashboardCharts\Db;
+namespace OCA\DashboardHighCharts\Db;
 
 
-use OCA\DashboardCharts\Model\DataConfig;
+use OCA\DashboardHighCharts\Model\DataConfig;
 use OCP\DB\QueryBuilder\IQueryBuilder;
 
 class DataRequestBuilder extends CoreDataRequestBuilder {

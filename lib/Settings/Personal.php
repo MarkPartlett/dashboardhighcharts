@@ -24,7 +24,7 @@
  *
  */
 
-namespace OCA\DashboardCharts\Settings;
+namespace OCA\DashboardHighCharts\Settings;
 
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IL10N;
@@ -32,7 +32,7 @@ use OCP\ILogger;
 use OCP\Settings\ISettings;
 use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\IConfig;
-use OCA\DashboardCharts\Db\DataRequest;
+use OCA\DashboardHighCharts\Db\DataRequest;
 
 
 
@@ -73,22 +73,22 @@ class Personal implements ISettings {
 		$userId = $this->userId;
 		$parameters = [	
 			'widgets'     => $this->dataRequest->getWidgets($userId),
-			'cachebuster' => $this->config->getAppValue('dashboardcharts', 'cachebuster', '0')
+			'cachebuster' => $this->config->getAppValue('dashboardhighcharts', 'cachebuster', '0')
 		];
 
-		$response = new TemplateResponse('dashboardcharts', 'settings-personal', $parameters, '');
+		$response = new TemplateResponse('dashboardhighcharts', 'settings-personal', $parameters, '');
 		$policy = new ContentSecurityPolicy();
-		$policy->addAllowedImageDomain('*');
-		$policy->addAllowedFontDomain('*');
-		$policy->addAllowedObjectDomain('*');
-		$policy->addAllowedStyleDomain('*');
-        $policy->addAllowedMediaDomain('*');
-		$policy->addAllowedScriptDomain('*');
-		$policy->addAllowedChildSrcDomain('*');
-		$policy->addAllowedConnectDomain('*');
-		$policy->addAllowedFrameDomain('*');
-		$policy->addAllowedWorkerSrcDomain('*');
-		$policy->addAllowedFrameAncestorDomain('*'); 
+		$policy->addAllowedImageDomain("*");
+		$policy->addAllowedFontDomain("*");
+		$policy->addAllowedObjectDomain("*");
+		$policy->addAllowedStyleDomain("*");
+        $policy->addAllowedMediaDomain("*");
+		$policy->addAllowedScriptDomain("*");
+		$policy->addAllowedChildSrcDomain("*");
+		$policy->addAllowedConnectDomain("*");
+		$policy->addAllowedFrameDomain("*");
+		$policy->addAllowedWorkerSrcDomain("*");
+		$policy->addAllowedFrameAncestorDomain("*"); 
 		$response->setContentSecurityPolicy($policy); 
 		return $response;
 	}
@@ -97,7 +97,7 @@ class Personal implements ISettings {
 	 * @return string the section ID, e.g. 'sharing'
 	 */
 	public function getSection() {
-		return 'dashboardcharts';
+		return 'dashboardhighcharts';
 	}
 
 	/**

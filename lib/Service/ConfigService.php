@@ -27,9 +27,9 @@
  */
 
 
-namespace OCA\DashboardCharts\Service;
+namespace OCA\DashboardHighCharts\Service;
 
-use OCA\DashboardCharts\AppInfo\Application;
+use OCA\DashboardHighCharts\AppInfo\Application;
 use OCP\IConfig;
 use OCP\PreConditionNotMetException;
 

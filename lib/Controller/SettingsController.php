@@ -25,7 +25,7 @@
  */
 
 
-namespace OCA\DashboardCharts\Controller;
+namespace OCA\DashboardHighCharts\Controller;
 
 use \OCP\IConfig;
 use \OCP\IRequest;
@@ -33,7 +33,7 @@ use \OCP\AppFramework\Http\TemplateResponse;
 use \OCP\AppFramework\Controller;
 use \OCP\AppFramework\Http\JSONResponse;
 use \OCP\AppFramework\Http;
-use OCA\DashboardCharts\Db\DataRequest;
+use OCA\DashboardHighCharts\Db\DataRequest;
 
 
 

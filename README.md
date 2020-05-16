@@ -1,4 +1,4 @@
-# Dashboard Charts for Nextcloud
+# Dashboard HighCharts for Nextcloud
 
 by Mark Partlett, Partlett Consulting.
 
@@ -9,21 +9,17 @@ Alpha version only
 
 Here are links to a few of the popular libraries:
 
-		Form.io - https://www.form.io/
 		Highcharts - http://www.highcharts.com
-		Chart.js -  http://www.chartjs.org 
-		Gauge.js -  https://github.com/bernii/gauge.js 
-		DataTables -  https://datatables.net
 	
 
 Installation
 
-Download the DashboardCharts Codebase
+Download the DashboardHighCharts Codebase
 
 	$ cd /var/www/html/nextcloud/apps
-	$ git clone https://github.com/MarkPartlett/dashboardcharts.git
+	$ git clone https://github.com/MarkPartlett/dashboardhighcharts.git
 
-Note: This will be moved to https://github.com/nextcloud/dashboardcharts.git once the app has been accepted to the NextCloud app store
+Note: This will be moved to https://github.com/nextcloud/dashboardhighcharts.git once the app has been accepted to the NextCloud app store
  
 Widgets are based on https://github.com/nextcloud/dashboard/wiki/How-the-Fortunes-widget-works 
 
@@ -39,5 +35,5 @@ Selecting Load Demo Data within settings will establish a new user
 	
  
  	* @author Mark Partlett <mark@partlettconsulting.com.au>
- 	* @copyright 2019, Mark Partlett <mark@partlettconsulting.com.au>
+ 	* @copyright 2020, Mark Partlett <mark@partlettconsulting.com.au>
 

@@ -26,12 +26,12 @@
  *
  */
 
-namespace OCA\DashboardCharts\Widgets;
+namespace OCA\DashboardHighCharts\Widgets;
 
 use OCP\Dashboard\Model\WidgetSetup;
 use OCP\Dashboard\Model\WidgetTemplate;
-use OCA\DashboardCharts\AppInfo\Application;
-use OCA\DashboardCharts\Service\Widgets\HChart5\HChart5Service;
+use OCA\DashboardHighCharts\AppInfo\Application;
+use OCA\DashboardHighCharts\Service\Widgets\HChart5\HChart5Service;
 use OCP\AppFramework\QueryException;
 use OCP\Dashboard\IDashboardWidget;
 use OCP\Dashboard\Model\IWidgetRequest;

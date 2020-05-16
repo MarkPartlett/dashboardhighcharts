@@ -26,10 +26,10 @@
  *
  */
 
-namespace OCA\DashboardCharts\Db;
+namespace OCA\DashboardHighCharts\Db;
 
 
-use OCA\DashboardCharts\Model\WidgetConfig;
+use OCA\DashboardHighCharts\Model\WidgetConfig;
 use OCP\Dashboard\Model\IWidgetConfig;
 
 class DataRequest extends DataRequestBuilder {

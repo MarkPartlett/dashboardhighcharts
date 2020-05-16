@@ -2,7 +2,7 @@
 
 
 /**
- * Nextcloud - Dashboard Charts app
+ * Nextcloud - Dashboard HighCharts app
  *
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
@@ -28,10 +28,16 @@
  
  
 
-namespace OCA\DashboardCharts\AppInfo;
+namespace OCA\DashboardHighCharts\AppInfo;
+
+use OC\Security\CSP\ContentSecurityPolicy;
 
 
-
+$cspManager = \OC::$server->getContentSecurityPolicyManager();
+$csp = new ContentSecurityPolicy();
+$csp->addAllowedChildSrcDomain("'self'");
+$csp->addAllowedFrameDomain("data:");
+$cspManager->addDefaultPolicy($csp);
 $app = new Application();
 $app->registerServices();
 

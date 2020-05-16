@@ -26,7 +26,7 @@
  *
  */
 
-namespace OCA\Dashboardcharts\AppInfo;
+namespace OCA\DashboardHighCharts\AppInfo;
 
 use \OCP\IContainer;
 use OCP\AppFramework\App;
@@ -38,7 +38,7 @@ use OCP\AppFramework\QueryException;
 
 class Application extends App {
 
-	const APP_NAME = 'dashboardcharts';
+	const APP_NAME = 'dashboardhighcharts';
 
 	/** @var IAppContainer */
 	private $container;

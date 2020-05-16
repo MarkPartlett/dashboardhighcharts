@@ -24,11 +24,46 @@
  *
  */
 
-?>
 
-<div class="widget-highchart1" id="widget-highchart1">
-<canvas id="line-hchart1" height="100%" width="100%"></canvas>
-</div>
-<div class="widget-highchart1b" id="widget-highchart1b">
+namespace OCA\DashboardHighCharts\Service\Widgets\HighChart4;
 
-</div>
+use OCA\DashboardHighCharts\Service\ConfigService;
+use OCA\DashboardHighCharts\Service\MiscService;
+use OCA\DashboardHighCharts\Db\DataRequest;
+
+class HighChart4Service {
+	
+	/** @var string */
+	private $userId;
+	/** @var ConfigService */
+	private $configService;
+
+	/** @var MiscService */
+	private $miscService;
+
+
+	/**
+	 * ProviderService constructor.
+	 *
+	 * @param ConfigService $configService
+	 * @param MiscService $miscService
+	 *
+	 */
+	public function __construct(ConfigService $configService,$userId, MiscService $miscService, DataRequest $dataRequest ) {
+		$this->configService = $configService;
+		$this->userId = $userId;
+		$this->miscService = $miscService;
+		$this->dataRequest = $dataRequest;
+		}
+
+
+	public function getHighChart4Data() {
+	
+	$widgetId ='HighChart4';
+	$userId = $this->userId;
+
+	$HighChart4Data = $this->dataRequest->get($widgetId, $userId );
+	return ($HighChart4Data);
+	}
+
+}

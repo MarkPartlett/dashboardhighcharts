@@ -25,10 +25,10 @@
 		<personal-section>OCA\DashboardHighCharts\Settings\Section</personal-section>
 	</settings>
 	<dashboard>
-		<widget>OCA\DashboardHighCharts\Widgets\HChart1Widget</widget>
-		<widget>OCA\DashboardHighCharts\Widgets\HChart2Widget</widget>
-		<widget>OCA\DashboardHighCharts\Widgets\HChart3Widget</widget>
-		<widget>OCA\DashboardHighCharts\Widgets\HChart4Widget</widget>
-		<widget>OCA\DashboardHighCharts\Widgets\HChart5Widget</widget>
+		<widget>OCA\DashboardHighCharts\Widgets\HighChart1Widget</widget>
+		<widget>OCA\DashboardHighCharts\Widgets\HighChart2Widget</widget>
+		<widget>OCA\DashboardHighCharts\Widgets\HighChart3Widget</widget>
+		<widget>OCA\DashboardHighCharts\Widgets\HighChart4Widget</widget>
+		<widget>OCA\DashboardHighCharts\Widgets\HighChart5Widget</widget>
 	</dashboard>
 </info>

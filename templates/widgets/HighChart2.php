@@ -26,9 +26,9 @@
 
 ?>
 
-<div class="widget-highchart1" id="widget-highchart1">
-<canvas id="line-hchart1" height="100%" width="100%"></canvas>
+<div class="widget-highchart2" id="widget-highchart2">
+<canvas id="line-highchart2" height="100%" width="100%"></canvas>
 </div>
-<div class="widget-highchart1b" id="widget-highchart1b">
+<div class="widget-highchart2b" id="widget-highchart2b">
 
 </div>

@@ -31,7 +31,7 @@ use OCP\AppFramework\Db\Mapper;
 
 class DataMapper extends Mapper {
         public function __construct (IDBConnection $db) {
-                parent::__construct($db, 'hcdashboard_data');
+                parent::__construct($db, 'dashboardhc_data');
         }
 
         public function setData ($widgetName, $userId, $dataValue) {

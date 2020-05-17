@@ -5,7 +5,7 @@
 	<overwrite>false</overwrite>
 
 	<table>
-		<name>*dbprefix*hcdashboard_data</name>
+		<name>*dbprefix*dashboardhc_data</name>
 		<declaration>
 			<field>
 				<name>user_id</name>

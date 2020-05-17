@@ -38,7 +38,7 @@ use OCP\IDBConnection;
 
 class CoreDataRequestBuilder {
 
-	const TABLE_SETTINGS = 'hcdashboard_data';
+	const TABLE_SETTINGS = 'dashboardhc_data';
 	const TABLE_EVENTS = 'hchart1_settings';
 
 	/** @var IDBConnection */

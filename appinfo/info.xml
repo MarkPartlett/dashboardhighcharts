@@ -2,10 +2,10 @@
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>dashboardhighcharts</id>
-    <name>DashboardHighCharts</name>
+    <name>Dashboard HighCharts</name>
     <summary>Flexible Dashboard HighCharts</summary>
     <description><![CDATA[Flexible Dashboard Chart widgets for the Dashboard v6.]]></description>
-    <version>0.1.3</version>
+    <version>0.0.1</version>
     <licence>agpl</licence>
     <author mail="mark@partlettconsulting.com.au" >Mark Partlett</author>
     <namespace>DashboardHighCharts</namespace>
@@ -30,5 +30,9 @@
 		<widget>OCA\DashboardHighCharts\Widgets\HighChart3Widget</widget>
 		<widget>OCA\DashboardHighCharts\Widgets\HighChart4Widget</widget>
 		<widget>OCA\DashboardHighCharts\Widgets\HighChart5Widget</widget>
+		<widget>OCA\DashboardHighCharts\Widgets\HighChart6Widget</widget>
+		<widget>OCA\DashboardHighCharts\Widgets\HighChart7Widget</widget>
+		<widget>OCA\DashboardHighCharts\Widgets\HighChart8Widget</widget>
+		<widget>OCA\DashboardHighCharts\Widgets\HighChart9Widget</widget>
 	</dashboard>
 </info>

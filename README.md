@@ -7,9 +7,7 @@ https://youtu.be/3TzOXOcAV2I
 
 Alpha version only  
 
-Here are links to a few of the popular libraries:
-
-		Highcharts - http://www.highcharts.com
+Here are links to Highcharts - http://www.highcharts.com
 	
 
 Installation
